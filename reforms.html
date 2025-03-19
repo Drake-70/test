@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reform.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" />
+      </div>
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+      <input type="text" list="Countries" autocomplete="off" />
+      <datalist id="Countries">
+        <option data-value="1">Cameroon</option>
+        <option>Ethiopia</option>
+        <option>South Africa</option>
+        <option>Botswana</option>
+        <option>Morocco</option>
+        <option>Japan</option>
+        <option>Australia</option>
+        <option>New Zealand</option>
+        <option>Cape Town</option>
+      </datalist>
+      <textarea name="" id=""></textarea>
+      <select>
+        <optgroup label="frontend-courses">
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">Javascript</option>
+        </optgroup>
+        <optgroup label="backend-courses">
+          <option value="1">Node.js</option>
+          <option value="2">ASP.NET</option>
+          <option value="3">Django</option>
+        </optgroup>
+      </select>
+      <div>
+        <input type="checkbox" id="front-end" />
+        <label class="label-inline" for="front-end">front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" />
+        <label class="label-inline" for="back-end">back-end</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="silver" checked />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+      <input type="range" min="0" max="100" value="90" />
+      <input type="file" accept="videos/*" />
+    </form>
+    <fieldset></fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <fieldset></fieldset>
+        <legend>Payment</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <input type="hidden" name="course" value="1234">
+      <input type="numbers" required minlength="0" maxlength="5">
+      <button type="submit">Submit</button>
+  </body>
+</html>

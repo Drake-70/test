@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: dodgerblue;
+}
+.container{
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: gold;
+}
+.container .form{
+    margin: 20px;
+}
+.form header{
+    font-size: 1.5rem;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+
+}
+.form label{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.form .input-box{
+    margin: 30px;
+    padding: 20px;
+    width: 100%;
+}
+button{
+    width: 600px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+button:hover{
+    background: skyblue;
+}
+.form :where(.select-box, .select){
+    row-gap: 15px;
+    margin-top: 20px;
+}
+.face{
+    align-items: flex-start;
+    justify-content: left;
+    color: tomato;
+}
+.tweet{
+    align-items: flex-end;
+    justify-content: right;
+    color: tomato;
+}
